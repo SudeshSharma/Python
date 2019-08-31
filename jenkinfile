@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage('Run') {
             steps {
-                sh 'python add.py'
+               python{
+                command('python add.py')
+               }
             }
         }
       }
